@@ -7,15 +7,14 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'English Evolution',
       theme: ThemeData(
-        primaryColor: Colors.blue,
-        primarySwatch: Colors.red,
-       
+        primaryColor: Colors.red,
+        primarySwatch: Colors.blue,
       ),
       home: SplashScreen(),
       routes: {
@@ -24,4 +23,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
